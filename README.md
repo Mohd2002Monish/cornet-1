@@ -19,18 +19,18 @@ To run this project locally on your machine, follow these steps:
 
 
 ## Routes
-/: Home page.
-/add-products: Add a new product.
-/product/:productId: Edit an existing product with the given productId.
-Functionality
+* /: Home page.
+* /add-products: Add a new product.
+* /product/:productId: Edit an existing product with the given productId.
+# Functionality
 The application allows you to perform the following operations:
 
-Add Products: Navigate to /add-products to add a new product.
-Edit Products: Navigate to /product/:productId to edit an existing product by providing its productId.
-Delete Products: Functionality to delete products is integrated into the edit page or through additional UI components as per your implementation.
-Technologies Used
-React.js: Front-end library for building user interfaces.
-React Router DOM: Library for routing in React applications.
-Redux: State management library for managing application state.
-Redux Thunk: Middleware for asynchronous Redux actions.
-Chakra UI: Component library for React applications.
+* Add Products: Navigate to /add-products to add a new product.
+* Edit Products: Navigate to /product/:productId to edit an existing product by providing its productId.
+* Delete Products: Functionality to delete products is integrated into the edit page or through additional UI components as per your implementation.
+# Technologies Used
+* React.js: Front-end library for building user interfaces.
+* React Router DOM: Library for routing in React applications.
+* Redux: State management library for managing application state.
+* Redux Thunk: Middleware for asynchronous Redux actions.
+* Chakra UI: Component library for React applications.
