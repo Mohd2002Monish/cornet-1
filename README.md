@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+CoreNet React Project
+Welcome to the CoreNet React project! This application is developed as an assignment given by CoreNet. It's a web application designed to manage products with functionalities like adding, editing, and deleting products.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
+This React project utilizes several third-party libraries to enhance its functionality and user experience. It employs React Router DOM for routing, Redux and Redux Thunk for global state management, and Chakra UI for UI components.
 
-## Available Scripts
+The project also includes a small backend server to support the frontend. You can find the backend server code on GitHub here.
 
-In the project directory, you can run:
+Installation
+To run this project locally on your machine, follow these steps:
 
-### `npm start`
+Clone this repository to your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+git clone https://github.com/Mohd2002Monish/cornet-1.git
+Navigate to the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+cd cornet-1
+Install dependencies using npm or yarn:
 
-### `npm test`
+bash
+Copy code
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# or
 
-### `npm run build`
+yarn install
+Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# or
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+yarn start
+Usage
+Once the development server is running, you can access the application in your web browser at http://localhost:3000.
 
-### `npm run eject`
+Routes
+/: Home page.
+/add-products: Add a new product.
+/product/:productId: Edit an existing product with the given productId.
+Functionality
+The application allows you to perform the following operations:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Add Products: Navigate to /add-products to add a new product.
+Edit Products: Navigate to /product/:productId to edit an existing product by providing its productId.
+Delete Products: Functionality to delete products is integrated into the edit page or through additional UI components as per your implementation.
+Technologies Used
+React.js: Front-end library for building user interfaces.
+React Router DOM: Library for routing in React applications.
+Redux: State management library for managing application state.
+Redux Thunk: Middleware for asynchronous Redux actions.
+Chakra UI: Component library for React applications.
