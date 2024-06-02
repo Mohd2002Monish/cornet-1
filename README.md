@@ -1,46 +1,24 @@
-CoreNet React Project
+# CoreNet React Project
+
 Welcome to the CoreNet React project! This application is developed as an assignment given by CoreNet. It's a web application designed to manage products with functionalities like adding, editing, and deleting products.
 
-Description
+## Description
+
 This React project utilizes several third-party libraries to enhance its functionality and user experience. It employs React Router DOM for routing, Redux and Redux Thunk for global state management, and Chakra UI for UI components.
 
-The project also includes a small backend server to support the frontend. You can find the backend server code on GitHub here.
+The project also includes a small backend server to support the frontend. You can find the backend server code on GitHub [here](https://github.com/Mohd2002Monish/cornet-1).
 
-Installation
+## Installation
+
 To run this project locally on your machine, follow these steps:
 
-Clone this repository to your local machine:
+1. Clone this repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/Mohd2002Monish/cornet-1.git
-Navigate to the project directory:
+   ```bash
+   git clone https://github.com/Mohd2002Monish/cornet-1.git
 
-bash
-Copy code
-cd cornet-1
-Install dependencies using npm or yarn:
 
-bash
-Copy code
-npm install
-
-# or
-
-yarn install
-Start the development server:
-
-bash
-Copy code
-npm start
-
-# or
-
-yarn start
-Usage
-Once the development server is running, you can access the application in your web browser at http://localhost:3000.
-
-Routes
+## Routes
 /: Home page.
 /add-products: Add a new product.
 /product/:productId: Edit an existing product with the given productId.
