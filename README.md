@@ -17,7 +17,20 @@ To run this project locally on your machine, follow these steps:
    ```bash
    git clone https://github.com/Mohd2002Monish/cornet-1.git
 
+2. Navigate to the project directory:
+  ```bash
+  cd cornet-1
 
+3. Install dependencies using npm or yarn:
+    ```bash
+        npm install
+        # or
+        yarn install
+4. Start the development server:
+   ```bash 
+      npm start
+     # or
+      yarn start
 ## Routes
 * /: Home page.
 * /add-products: Add a new product.
