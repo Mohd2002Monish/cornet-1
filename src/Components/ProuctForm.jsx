@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-
+import { useNavigate } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
 const intial = {
   id: Math.random() + 1,
   title: "",
@@ -15,7 +16,7 @@ const intial = {
 };
 const ProductForm = ({ data, handleDispatch, id }) => {
   const [formData, setFormData] = useState(data || intial);
-
+  const toast = useToast();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -24,11 +25,29 @@ const ProductForm = ({ data, handleDispatch, id }) => {
     }));
   };
   const dispatch = useDispatch();
-
+  const navigate = useNavigate("/");
   const handleSubmit = (e) => {
     e.preventDefault();
 
     dispatch(handleDispatch(formData, id));
+    if (data) {
+      toast({
+        title: "Product Updated",
+        description: "product Updated successfully",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    } else {
+      toast({
+        title: "Product Added",
+        description: "Product Added Successfully",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    }
+    navigate("/");
   };
 
   return (

@@ -19,7 +19,7 @@ To run this project locally on your machine, follow these steps:
 
 2. Navigate to the project directory:
   ```bash
-  cd cornet-1
+      cd cornet-1
 
 3. Install dependencies using npm or yarn:
     ```bash
